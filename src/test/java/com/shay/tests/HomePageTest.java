@@ -28,16 +28,17 @@ public class HomePageTest extends BaseDriver{
 		Thread.sleep(2000);
 		
 		report = ExtentFactory.getInstance();
-		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>ORANGE HRM LOGIN</b></p>").assignAuthor("QA TEAM").assignDevice("Windows");
+		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>Home Page</b></p>").assignAuthor("QA TEAM").assignDevice("Windows");
 	}
 	
 	
 	@Test
 	public void loginTest() throws InterruptedException, IOException {
-		childTest = parentTest.createNode("<p style=\"color:#3E96E7; font-size:20px\"><b>LOGIN</b></p>");
+		childTest = parentTest.createNode("<p style=\"color:#3E96E7; font-size:20px\"><b>SignIn Button</b></p>");
 	
 		HomePage homePage = new HomePage(childTest); 
-//		homePage.login();
+		homePage.signIn();
+		Thread.sleep(2000);
 	}
 	
 	@AfterClass

@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseDriver {
 	
-	protected static String url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+	protected static String url = "https://www.rokomari.com/";
 	
 WebDriver driver;
 	
