@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ORANGE" title="com.shay.tests.LoginTest" class="method navigator-link" hash-for-method="Signin">Signin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ORANGE" title="com.shay.tests.WriterTest" class="method navigator-link" hash-for-method="Writer">Writer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -125,14 +130,14 @@
           <div class="suite-ORANGE-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.shay.tests.LoginTest</span>
+              <span class="class-name">com.shay.tests.WriterTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Signin">
-                  </a> <!-- Signin -->
-                  <span class="method-name">Signin</span>
+                  <a name="Writer">
+                  </a> <!-- Writer -->
+                  <span class="method-name">Writer</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -152,6 +157,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-ORANGE-class-passed -->
+          <div class="suite-ORANGE-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.shay.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Signin">
+                  </a> <!-- Signin -->
+                  <span class="method-name">Signin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ORANGE-class-passed -->
         </div> <!-- panel ORANGE -->
         <div panel-name="test-xml-ORANGE" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -166,6 +186,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.shay.tests.HomePageTest&quot;/&gt;
       &lt;class name=&quot;com.shay.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.shay.tests.WriterTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- ORANGE --&gt;
@@ -179,7 +200,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,20 +226,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Signin')
-data.setCell(0, 2, 'com.shay.tests.LoginTest')
-data.setCell(0, 3, 50653);
+data.setCell(0, 1, 'Writer')
+data.setCell(0, 2, 'com.shay.tests.WriterTest')
+data.setCell(0, 3, 8348);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'com.shay.tests.HomePageTest')
-data.setCell(1, 3, 44073);
+data.setCell(1, 1, 'Signin')
+data.setCell(1, 2, 'com.shay.tests.LoginTest')
+data.setCell(1, 3, 5177);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.shay.tests.HomePageTest')
+data.setCell(2, 3, 2252);
 window.suiteTableData['ORANGE']= { tableData: data, tableDiv: 'times-div-ORANGE'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-ORANGE">
               </div> <!-- times-div-ORANGE -->
             </div> <!-- times-div -->
@@ -233,9 +258,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-ORANGE" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.shay.tests.WriterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startBrowser</span>
+                <br/>
+                <span class="ignored-method-name">stopBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.shay.tests.LoginTest</span>
               <div class="ignored-methods-div">
@@ -260,37 +294,52 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">2934 ms</span>
+                <span class="method-start">3043 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">41582 ms</span>
+                <span class="method-start">7333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">report</span>
-                <span class="method-start">85658 ms</span>
+                <span class="method-start">9587 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shay.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">86240 ms</span>
+                <span class="method-start">10142 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Signin</span>
-                <span class="method-start">86241 ms</span>
+                <span class="method-start">10144 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">report</span>
-                <span class="method-start">136896 ms</span>
+                <span class="method-start">15323 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.shay.tests.WriterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">start</span>
+                <span class="method-start">15653 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Writer</span>
+                <span class="method-start">15655 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">report</span>
+                <span class="method-start">24005 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shay.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">137141 ms</span>
+                <span class="method-start">24333 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

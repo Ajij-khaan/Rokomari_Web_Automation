@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.shay.tests.HomePageTest">
+      <class name="com.shay.tests.WriterTest">
         <methods>
           <include name="startBrowser"/>
           <include name="stopBrowser"/>
-          <include name="report"/>
-          <include name="loginTest"/>
+          <include name="Writer"/>
           <include name="start"/>
+          <include name="report"/>
         </methods>
-      </class> <!-- com.shay.tests.HomePageTest -->
+      </class> <!-- com.shay.tests.WriterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

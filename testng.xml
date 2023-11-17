@@ -6,6 +6,7 @@
 		<classes>
 			<class name="com.shay.tests.HomePageTest" />
 			<class name="com.shay.tests.LoginTest" />
+			<class name="com.shay.tests.WriterTest" />
 		</classes>
 	</test>
 	

@@ -11,9 +11,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseDriver {
 	
-	protected static String url = "https://www.rokomari.com/";
+	protected static String url = "https://www.rokomari.com/book";
 	
-WebDriver driver;
+	protected WebDriver driver;
 	
 	@BeforeSuite
 	public void startBrowser() {

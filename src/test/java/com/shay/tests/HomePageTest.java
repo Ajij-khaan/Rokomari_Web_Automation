@@ -25,8 +25,6 @@ public class HomePageTest extends BaseDriver{
 	@BeforeClass
 	public void start() throws InterruptedException {
 		PageDriver.getCurrentDrieDriver().get(url);
-		Thread.sleep(2000);
-		
 		report = ExtentFactory.getInstance();
 		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>Home Page</b></p>").assignAuthor("QA TEAM").assignDevice("Windows");
 	}
@@ -38,7 +36,7 @@ public class HomePageTest extends BaseDriver{
 	
 		HomePage homePage = new HomePage(childTest); 
 		homePage.signIn();
-		Thread.sleep(2000);
+		
 	}
 	
 	@AfterClass

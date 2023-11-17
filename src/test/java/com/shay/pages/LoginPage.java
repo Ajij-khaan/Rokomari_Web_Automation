@@ -65,30 +65,28 @@ public class LoginPage {
 			if(email.isDisplayed()) {
 				test.info("Please enter email");
 				email.sendKeys("pelexev579@mainmile.com");
+				Thread.sleep(500);
 				passedCaseWithSc("Email Entered", "Email enterd");
 				
 				try {
 					if(nextBtn.isDisplayed()) {
 						test.info("Please click next");
 						nextBtn.click();
+						Thread.sleep(500);
 						passedCaseWithSc("Next button clicked", "Next button");
-						System.out.println("Yes code workds here");
-						Thread.sleep(1000);
 						
 						try {
 							if (passField.isDisplayed()) {
 								test.info("Please enter password");
 								passField.sendKeys("pass1234");
+								Thread.sleep(500);
 								passedCaseWithSc("Password Enterd","Password entered");
-								Thread.sleep(1000);
 								
 								try {
 									if (loginBtn.isDisplayed()) {
 										test.info("Please click login button.");
 										loginBtn.click();
 										passedCaseWithSc("Login Button clicked", "loginbtn clicked");
-										System.out.println("Yes run hereeeeeeeeeee");
-										Thread.sleep(1000);
 									}
 								} catch (Exception e) {
 									failedCase("Login button is not locateable.Please check the error.", "loginBtn error");
