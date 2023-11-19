@@ -64,7 +64,7 @@ public class LoginPage {
 		try {
 			if(email.isDisplayed()) {
 				test.info("Please enter email");
-				email.sendKeys("pelexev579@mainmile.com");
+				email.sendKeys("wijovi2107@bikedid.com");
 				Thread.sleep(500);
 				passedCaseWithSc("Email Entered", "Email enterd");
 				

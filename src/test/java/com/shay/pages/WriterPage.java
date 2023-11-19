@@ -94,28 +94,29 @@ public class WriterPage{
 		}
 		}
 	
-	@FindBy(xpath = "//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[44]/div[1]/a[1]/div[1]/img[1]")
+	@FindBy(xpath = "//body/div[7]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[33]/div[1]/a[1]/div[1]/img[1]")
 	WebElement vutureBookLocation;
 	
-	@FindBy(xpath = "//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[44]/div[1]/a[1]/div[1]/div[2]/button[1]")
+	@FindBy(xpath = "//body/div[7]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[33]/div[1]/a[1]/div[1]/div[2]/button[1]")
 	WebElement vutureBookATC;
 
 	
 	public void bookAddToCart() throws IOException {
 		try {
+			test.info("Scroll and Hover to Vuture Book");
 			if(vutureBookLocation.isDisplayed()) {
-				 test.info("Scroll and Hover to Vuture Book");
 			        js.executeScript("arguments[0].scrollIntoView(true)", vutureBookLocation);
 			        Thread.sleep(1000);
 			        action.moveToElement(vutureBookLocation).perform();
 			        passedCaseWithSc("Scroll to Vuture Book", "vutureBookLocation Passed");
-
+			        
+			        
+			        test.info("Click Add to Cart Vuture Book");
 				try {
 		            if (vutureBookATC.isDisplayed()) {
-		                test.info("Click Add to Cart Vuture Book");
 		                vutureBookATC.click();
+//		                Thread.sleep(5000);
 		                passedCaseWithSc("ATC Vuture Book", "vutureBookATC Passed");
-		                Thread.sleep(2000);
 		            }
 		        } catch (Exception e) {
 		            failedCase("vutureBookATC is not locatable.", "vutureBookATC failed");

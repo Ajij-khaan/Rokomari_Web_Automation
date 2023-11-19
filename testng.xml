@@ -7,6 +7,8 @@
 			<class name="com.shay.tests.HomePageTest" />
 			<class name="com.shay.tests.LoginTest" />
 			<class name="com.shay.tests.WriterTest" />
+			<class name="com.shay.tests.AddToCartTest" />
+			<class name="com.shay.tests.ShippingTest" />
 		</classes>
 	</test>
 	

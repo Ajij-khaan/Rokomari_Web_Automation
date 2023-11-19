@@ -3,6 +3,13 @@
 <suite name="Failed suite [ORANGE]" guice-stage="DEVELOPMENT">
   <test name="Test(failed)">
     <classes>
+      <class name="com.shay.tests.AddToCartTest">
+        <methods>
+          <include name="start"/>
+          <include name="addToCartTest"/>
+          <include name="report"/>
+        </methods>
+      </class> <!-- com.shay.tests.AddToCartTest -->
       <class name="com.shay.tests.WriterTest">
         <methods>
           <include name="startBrowser"/>
@@ -12,6 +19,22 @@
           <include name="report"/>
         </methods>
       </class> <!-- com.shay.tests.WriterTest -->
+      <class name="com.shay.tests.LoginTest">
+        <methods>
+          <include name="Signin"/>
+          <include name="start"/>
+          <include name="report"/>
+          <include name="startBrowser"/>
+          <include name="stopBrowser"/>
+        </methods>
+      </class> <!-- com.shay.tests.LoginTest -->
+      <class name="com.shay.tests.ShippingTest">
+        <methods>
+          <include name="shippingDetailsTest"/>
+          <include name="report"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.shay.tests.ShippingTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [ORANGE] -->

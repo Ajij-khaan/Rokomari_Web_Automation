@@ -1,57 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+<testng-results ignored="4" total="9" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-17T14:57:15Z" name="ORANGE" finished-at="2023-11-17T14:57:36Z" duration-ms="21273">
+  <suite started-at="2023-11-19T18:39:55Z" name="ORANGE" finished-at="2023-11-19T18:41:21Z" duration-ms="86460">
     <groups>
     </groups>
-    <test started-at="2023-11-17T14:57:15Z" name="Test" finished-at="2023-11-17T14:57:36Z" duration-ms="21273">
+    <test started-at="2023-11-19T18:39:55Z" name="Test" finished-at="2023-11-19T18:41:21Z" duration-ms="86460">
       <class name="com.shay.tests.HomePageTest">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.shay.tests.HomePageTest@2cdd0d4b]" started-at="2023-11-17T20:57:12Z" name="startBrowser" finished-at="2023-11-17T20:57:15Z" duration-ms="3027" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.shay.tests.HomePageTest@2525ff7e]" started-at="2023-11-20T00:39:51Z" name="startBrowser" finished-at="2023-11-20T00:39:55Z" duration-ms="3594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method is-config="true" signature="start()[pri:0, instance:com.shay.tests.HomePageTest@2cdd0d4b]" started-at="2023-11-17T20:57:15Z" name="start" finished-at="2023-11-17T20:57:19Z" duration-ms="4280" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.shay.tests.HomePageTest@2525ff7e]" started-at="2023-11-20T00:39:55Z" name="start" finished-at="2023-11-20T00:39:59Z" duration-ms="4745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="loginTest()[pri:0, instance:com.shay.tests.HomePageTest@2cdd0d4b]" started-at="2023-11-17T20:57:19Z" name="loginTest" finished-at="2023-11-17T20:57:22Z" duration-ms="2252" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.shay.tests.HomePageTest@2525ff7e]" started-at="2023-11-20T00:39:59Z" name="loginTest" finished-at="2023-11-20T00:40:03Z" duration-ms="3420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="report()[pri:0, instance:com.shay.tests.HomePageTest@2cdd0d4b]" started-at="2023-11-17T20:57:22Z" name="report" finished-at="2023-11-17T20:57:22Z" duration-ms="554" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.shay.tests.HomePageTest@2525ff7e]" started-at="2023-11-20T00:40:03Z" name="report" finished-at="2023-11-20T00:40:04Z" duration-ms="731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:com.shay.tests.HomePageTest@2cdd0d4b]" started-at="2023-11-17T20:57:36Z" name="stopBrowser" finished-at="2023-11-17T20:57:37Z" duration-ms="290" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:com.shay.tests.HomePageTest@2525ff7e]" started-at="2023-11-20T00:41:21Z" name="stopBrowser" finished-at="2023-11-20T00:41:21Z" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- com.shay.tests.HomePageTest -->
-      <class name="com.shay.tests.WriterTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.shay.tests.WriterTest@2e1d27ba]" started-at="2023-11-17T20:57:28Z" name="start" finished-at="2023-11-17T20:57:28Z" duration-ms="1" status="PASS">
+      <class name="com.shay.tests.AddToCartTest">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.shay.tests.AddToCartTest@44a7bfbc]" started-at="2023-11-20T00:40:20Z" name="start" finished-at="2023-11-20T00:40:20Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="Writer()[pri:0, instance:com.shay.tests.WriterTest@2e1d27ba]" started-at="2023-11-17T20:57:28Z" name="Writer" finished-at="2023-11-17T20:57:36Z" duration-ms="8348" status="PASS">
+        <test-method signature="addToCartTest()[pri:0, instance:com.shay.tests.AddToCartTest@44a7bfbc]" started-at="2023-11-20T00:40:20Z" name="addToCartTest" finished-at="2023-11-20T00:40:23Z" duration-ms="3473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="report()[pri:0, instance:com.shay.tests.AddToCartTest@44a7bfbc]" started-at="2023-11-20T00:40:23Z" name="report" finished-at="2023-11-20T00:40:23Z" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- com.shay.tests.AddToCartTest -->
+      <class name="com.shay.tests.ShippingTest">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.shay.tests.ShippingTest@4ef37659]" started-at="2023-11-20T00:40:23Z" name="start" finished-at="2023-11-20T00:40:23Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="shippingDetailsTest()[pri:0, instance:com.shay.tests.ShippingTest@4ef37659]" started-at="2023-11-20T00:40:23Z" name="shippingDetailsTest" finished-at="2023-11-20T00:41:21Z" duration-ms="57464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingDetailsTest -->
+        <test-method is-config="true" signature="report()[pri:0, instance:com.shay.tests.ShippingTest@4ef37659]" started-at="2023-11-20T00:41:21Z" name="report" finished-at="2023-11-20T00:41:21Z" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- com.shay.tests.ShippingTest -->
+      <class name="com.shay.tests.WriterTest">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.shay.tests.WriterTest@152aa092]" started-at="2023-11-20T00:40:11Z" name="start" finished-at="2023-11-20T00:40:11Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="Writer()[pri:0, instance:com.shay.tests.WriterTest@152aa092]" started-at="2023-11-20T00:40:11Z" name="Writer" finished-at="2023-11-20T00:40:19Z" duration-ms="7623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Writer -->
-        <test-method is-config="true" signature="report()[pri:0, instance:com.shay.tests.WriterTest@2e1d27ba]" started-at="2023-11-17T20:57:36Z" name="report" finished-at="2023-11-17T20:57:36Z" duration-ms="295" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.shay.tests.WriterTest@152aa092]" started-at="2023-11-20T00:40:19Z" name="report" finished-at="2023-11-20T00:40:20Z" duration-ms="501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
       </class> <!-- com.shay.tests.WriterTest -->
       <class name="com.shay.tests.LoginTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.shay.tests.LoginTest@7e9131d5]" started-at="2023-11-17T20:57:22Z" name="start" finished-at="2023-11-17T20:57:22Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.shay.tests.LoginTest@524d6d96]" started-at="2023-11-20T00:40:04Z" name="start" finished-at="2023-11-20T00:40:04Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="Signin()[pri:0, instance:com.shay.tests.LoginTest@7e9131d5]" started-at="2023-11-17T20:57:22Z" name="Signin" finished-at="2023-11-17T20:57:27Z" duration-ms="5177" status="PASS">
+        <test-method signature="Signin()[pri:0, instance:com.shay.tests.LoginTest@524d6d96]" started-at="2023-11-20T00:40:04Z" name="Signin" finished-at="2023-11-20T00:40:11Z" duration-ms="6917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Signin -->
-        <test-method is-config="true" signature="report()[pri:0, instance:com.shay.tests.LoginTest@7e9131d5]" started-at="2023-11-17T20:57:27Z" name="report" finished-at="2023-11-17T20:57:28Z" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.shay.tests.LoginTest@524d6d96]" started-at="2023-11-20T00:40:11Z" name="report" finished-at="2023-11-20T00:40:11Z" duration-ms="929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
